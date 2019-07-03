@@ -18,3 +18,13 @@ const paragraphNew = document.querySelector('.p-to-copy-to');
 inputField.addEventListener("keyup", function() {
     paragraphNew.innerText = inputField.value;
 });
+
+
+// Event listener for all buttons in a group
+
+document.querySelector('.button-container').addEventListener('click', function(event) {
+    //if (event.target.tagName === 'button') {
+        alert(`You clicked on button ${event.target.innerText}`);
+   // }
+   // event.stopPropagation();
+});
